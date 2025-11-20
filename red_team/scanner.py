@@ -17,7 +17,7 @@ scanner.scan(target, arguments=options)
 
 # Print the scan results
 for host in scanner.all_hosts():
-    info.append(f"Host: {host}"cl)
+    info.append(f"Host: {host}")
     info.append(f"State: {scanner[host].state()}")
 
     print("Host: ", host)
