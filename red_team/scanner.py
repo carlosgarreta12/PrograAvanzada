@@ -7,10 +7,10 @@ info = []
 scanner = nmap.PortScanner()
 
 # Define target IP address or hostname
-target = "10.0.0.4"
+target = "20.228.97.25"
 
 # Define Nmap options
-options = "-sS -sV -Pn -O -A -p 1-1000"
+options = "-sS -sV -Pn -T4 -O -A -p 1-1000"
 
 # Run the Nmap scan with the specified options
 scanner.scan(target, arguments=options)

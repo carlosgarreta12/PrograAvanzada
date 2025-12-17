@@ -27,7 +27,7 @@ def list_services():
         print(f"Error al listar servicios: {e}")
  
 def log_event(message):
-    with open("blue_team/log_events.txt", "a") as log_file:
+    with open("log_events.txt", "a") as log_file:
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         log_file.write(f"[{timestamp}] {message}\n")
  
@@ -35,7 +35,7 @@ def log_event(message):
 # -------------------------
 # BLOQUE PRINCIPAL
 # -------------------------
-if _name_ == "_main_":
+if __name__ == "__main__":
     print("Auditoría básica del sistema\n")
     log_event("Inicio de auditoría")
     list_users()
